@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+input, label, button{
+    font-family: 'Kanit', sans-serif;
+}
+
+.form-group label:not(.error) {
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+}
+
+.login-wrapper {
+    background-color: #f05a1f;
+}
+
+.btn-hotel{
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.btn-primary-hotel.active, .btn-primary-hotel:active, .btn-primary-hotel.active:focus, .btn-primary-hotel:active:focus, .btn-primary-hotel:active:hover, .show .dropdown-toggle.btn-primary-hotel {
+    background-color: #f05a1f;
+    border-color: #f05a1f;
+    color: #fff;
+}
+
+.btn-primary-hotel.hover, .btn-primary-hotel:hover, .show .dropdown-toggle.btn-primary-hotel {
+    background-color: #f05a1f;
+    border-color: #f05a1f;
+    color: #fff;
+}
+
+.btn-primary-hotel, .btn-primary-hotel:focus {
+    color: #f05a1f;
+    background-color: #ffffff;
+    border-color: #f05a1f;
+}
+
+.alert{
+    border-radius: 0;
+}
+
+input{
+    border-radius: 0;
+}
+
+a {
+    text-shadow: none !important;
+    color: #f05a1f;
+    transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+}
+
+a:focus, a:hover, a:active {
+    color: #ca551f;
+}
