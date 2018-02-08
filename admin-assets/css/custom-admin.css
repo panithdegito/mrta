@@ -222,5 +222,14 @@ h1, h2, h3, h4, h5, h6 {
     border-top: none;
 }
 
+.dropzone .dz-preview .dz-details, .dropzone-previews .dz-preview .dz-details {
+    width: 100px;
+     height: auto;
+    position: relative;
+     background: transparent;
+    padding: 5px;
+    margin-bottom: 22px;
+}
+
 
 

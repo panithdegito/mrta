@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34464ad3-318d-4ac0-97bc-016abb6516de" name="Default" comment="" />
+    <list default="true" id="34464ad3-318d-4ac0-97bc-016abb6516de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-assets/assets/plugins/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/admin-assets/assets/plugins/dropzone/dropzone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-assets/css/custom-admin.css" afterPath="$PROJECT_DIR$/admin-assets/css/custom-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,16 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dependencies/app/News.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="62" lean-forward="false" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ConstructFolderMedia.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dependencies/app/ConstructFolderMedia.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,15 +50,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConstructPictureController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="86" column="77" lean-forward="false" selection-start-line="86" selection-start-column="77" selection-end-line="86" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="287" column="38" lean-forward="false" selection-start-line="287" selection-start-column="38" selection-end-line="287" selection-end-column="38" />
+            <state relative-caret-position="339">
+              <caret line="275" column="42" lean-forward="false" selection-start-line="275" selection-start-column="42" selection-end-line="275" selection-end-column="42" />
               <folding>
                 <element signature="e#5328#5377#0#HTML" expanded="true" />
                 <element signature="e#8426#8448#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dependencies/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="58" column="95" lean-forward="false" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-admin.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin-assets/css/custom-admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="228" column="28" lean-forward="false" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,36 +125,6 @@
       </file>
       <file leaf-file-name="GalleryConstruct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dependencies/app/GalleryConstruct.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneralTranslation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dependencies/app/GeneralTranslation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructImage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dependencies/app/ConstructImage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="72" lean-forward="false" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Language.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dependencies/app/Language.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -152,10 +160,18 @@
       <find>function render</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dependencies/resources/views/roles/edit.blade.php" />
         <option value="$PROJECT_DIR$/dependencies/resources/views/roles/create.blade.php" />
         <option value="$PROJECT_DIR$/dependencies/resources/views/language/edit.blade.php" />
         <option value="$PROJECT_DIR$/dependencies/resources/views/users/index.blade.php" />
@@ -200,12 +216,13 @@
         <option value="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPercentController.php" />
         <option value="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructController.php" />
         <option value="$PROJECT_DIR$/dependencies/database/migrations/2018_02_07_173613_create_construct_images_table.php" />
-        <option value="$PROJECT_DIR$/admin-assets/css/custom-admin.css" />
         <option value="$PROJECT_DIR$/dependencies/routes/web.php" />
-        <option value="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php" />
         <option value="$PROJECT_DIR$/dependencies/app/ConstructImage.php" />
         <option value="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructImageController.php" />
+        <option value="$PROJECT_DIR$/admin-assets/css/custom-admin.css" />
         <option value="$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php" />
+        <option value="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -222,6 +239,7 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -433,10 +451,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34406295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -454,6 +472,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -462,13 +506,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dependencies/app/NewsTranslation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -729,37 +766,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin-assets/css/custom-admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="58" column="95" lean-forward="false" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPercentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-918">
           <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1982">
-          <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="49" />
-          <folding>
-            <element signature="e#40#69#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,6 +858,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin-assets/css/custom-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="228" column="28" lean-forward="false" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="275" column="42" lean-forward="false" selection-start-line="275" selection-start-column="42" selection-end-line="275" selection-end-column="42" />
+          <folding>
+            <element signature="e#5328#5377#0#HTML" expanded="true" />
+            <element signature="e#8426#8448#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructImageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -855,14 +885,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/resources/views/construct_picture/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructPictureController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="287" column="38" lean-forward="false" selection-start-line="287" selection-start-column="38" selection-end-line="287" selection-end-column="38" />
-          <folding>
-            <element signature="e#5328#5377#0#HTML" expanded="true" />
-            <element signature="e#8426#8448#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="405">
+          <caret line="86" column="77" lean-forward="false" selection-start-line="86" selection-start-column="77" selection-end-line="86" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="58" column="95" lean-forward="false" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

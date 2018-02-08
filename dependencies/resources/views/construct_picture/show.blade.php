@@ -269,25 +269,14 @@
 @endsection
 @section('bottom-scripts')
     <script>
-        Dropzone.autoDiscover = false;
-        // or disable for specific dropzone:
-        // Dropzone.options.myDropzone = false;
-
-        $(function() {
-            // Now that the DOM is fully loaded, create the dropzone, and setup the
-            // event listeners
-            var myDropzone = new Dropzone("#myImageDropzone");
-            myDropzone.on("processing", function() {
-                //set autoProcessQueue to true, so every file gets uploaded
-                this.options.autoProcessQueue = true;
-                processing = true;
-            });
-            dropzone.on('queuecomplete', function() {
-                if(true == processing)
-                {
-                    location.reload();
+        $(document).ready(function () {
+            Dropzone.options.myImageDropzone = {
+                init: function () {
+                    this.on("queuecomplete", function (file) {
+                        location.reload();
+                    });
                 }
-            });
+            };
         });
 
 

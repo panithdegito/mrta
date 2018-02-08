@@ -1,4 +1,6 @@
-vendor/
+dependencies/vendor/
+progress/
+media/
 node_modules/
 npm-debug.log
 

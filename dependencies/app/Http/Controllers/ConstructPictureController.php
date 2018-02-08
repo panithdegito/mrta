@@ -84,7 +84,7 @@ class ConstructPictureController extends Controller
     public function show($id)
     {
         $folder = ConstructFolderMedia::findOrFail($id);
-        $image = ConstructImage::where('folder_id', $id)->get();
+        $image = ConstructImage::where('folder_id', $id)->orderBy('id', 'desc')->get();
         return view('construct_picture.show', ['folder'=>$folder, 'pictures'=>$image]);
     }
 
