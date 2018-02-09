@@ -44,7 +44,7 @@ Route::prefix('MRTA-backend/console')->group(function (){
     Route::resource('menus', 'MenusController');
 
     //Media
-    Route::resource('Media', 'MediaController');
+    Route::resource('media', 'MediaController');
 
     //Construct
     Route::prefix('construct')->group(function (){
