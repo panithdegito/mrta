@@ -45,6 +45,7 @@ Route::prefix('MRTA-backend/console')->group(function (){
 
     //Media
     Route::resource('media', 'MediaController');
+    Route::put('media', 'MediaController@upload')->name('media_upload');
 
     //Construct
     Route::prefix('construct')->group(function (){

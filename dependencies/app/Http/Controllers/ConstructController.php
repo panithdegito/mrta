@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Construct;
 use App\ConstructPercent;
+use App\Language;
 use Illuminate\Http\Request;
 
 class ConstructController extends Controller
@@ -31,7 +32,8 @@ class ConstructController extends Controller
      */
     public function create()
     {
-        //
+        $language = Language::all();
+        return view('construct.create')->with(['languages'=>$language]);
     }
 
     /**

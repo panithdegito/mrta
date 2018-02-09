@@ -89,7 +89,7 @@
                         @can('มีเดีย')
                             <li class="p-r-10 inline menu-item">
                                 <div class="p-r-10 fs-14 font-heading hidden-md-down text-orange" style="text-align: center">
-                                    <a href="{{route('dashboard')}}" class="fs-14 font-heading hidden-md-down text-orange">
+                                    <a href="{{route('media.index')}}" class="fs-14 font-heading hidden-md-down text-orange">
                                         <i class="icon-picture" style="font-size: 30px"></i><br>
                                         มีเดีย
                                     </a>
