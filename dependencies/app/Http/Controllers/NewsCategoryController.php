@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\NewsCategory;
+use App\NewsCategoryTranslation;
 use Illuminate\Http\Request;
+use App\Language;
+use Validator;
 
 class NewsCategoryController extends Controller
 {
@@ -25,7 +28,8 @@ class NewsCategoryController extends Controller
      */
     public function create()
     {
-        //
+        $language = Language::all();
+        return view('news-categories.create')->with(['languages'=>$language]);
     }
 
     /**
@@ -36,7 +40,52 @@ class NewsCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $languages = Language::all();
+        $validate = [];
+        foreach($languages as $language){
+            $validate['name'.$language->abbreviation] = 'required';
+
+        }
+
+        $message = [];
+        foreach($languages as $language){
+            $message['name'.$language->abbreviation.'.required'] = 'จำเป็นต้องระบุชื่อในภาษา'.$language->name;
+
+        }
+        // validate the input
+        $validation = Validator::make( $request->all(),$validate, $message
+        );
+
+// redirect on validation error
+        if ( $validation->fails() ) {
+            // change below as required
+            return \Redirect::back()->withInput()->withErrors( $validation->messages() );
+        }
+        else {
+            $categories = new NewsCategory();
+            $categories->save();
+
+
+            $translation = NewsCategory::findOrFail($categories->id);
+            $language = Language::all();
+            foreach ($language as $language){
+                $categorie_translation = new NewsCategoryTranslation(['local'=>$language->abbreviation,'name'=>$request['name'.$language->abbreviation]]);
+                $translation->translationSave()->save($categorie_translation);
+            }
+
+
+
+
+
+
+            return redirect()->route('news-categories.index')
+                ->with('flash_message',
+                    'เพิ่มประเภทข่าวสารเรียบร้อยแล้ว');
+
+
+
+
+        }
     }
 
     /**
@@ -47,7 +96,7 @@ class NewsCategoryController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**
@@ -58,7 +107,9 @@ class NewsCategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $language = Language::all();
+        $category = NewsCategory::findOrFail($id);
+        return view('news-categories.edit')->with(['languages'=>$language,'category'=>$category]);
     }
 
     /**
@@ -70,7 +121,45 @@ class NewsCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $languages = Language::all();
+        $validate = [];
+        foreach($languages as $language){
+            $validate['name'.$language->abbreviation] = 'required';
+
+        }
+
+        $message = [];
+        foreach($languages as $language){
+            $message['name'.$language->abbreviation.'.required'] = 'จำเป็นต้องระบุชื่อในภาษา'.$language->name;
+
+        }
+        // validate the input
+        $validation = Validator::make( $request->all(),$validate, $message
+        );
+
+// redirect on validation error
+        if ( $validation->fails() ) {
+            // change below as required
+            return \Redirect::back()->withInput()->withErrors( $validation->messages() );
+        }
+        else {
+            $category = NewsCategory::findOrFail($id);
+            $category->save();
+
+            $language = Language::all();
+            foreach ($language as $language){
+                $translation = NewsCategoryTranslation::where('news_category_id',$id)->where('local', $language->abbreviation)->first();
+                $translation->name = $request['name'.$language->abbreviation];
+                $translation->save();
+            }
+            return redirect()->route('news-categories.edit',$id)
+                ->with('flash_message',
+                    'แก้ไขประเภทข่าวสารเรียบร้อยแล้ว');
+
+
+
+
+        }
     }
 
     /**
@@ -81,6 +170,36 @@ class NewsCategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category_translation = NewsCategoryTranslation::findOrFail('news_category_id',$id);
+        $category_translation->delete();
+        $category = NewsCategory::findOrFail($id);
+        $category->delete();
+        return redirect()->route('news-categories.index')
+            ->with(['flash_message'=>
+                'ลบประเภทข่าวสารเรียบร้อยแล้ว']);
+    }
+    public function destroyMany(Request $request){
+        if ($request->multi_id != null){
+            $category = NewsCategory::findOrFail($request->multi_id);
+
+            foreach ($category as $category){
+                $translation = NewsCategoryTranslation::where('news_category_id',$category->id);
+                $translation->delete();
+
+
+            }
+            $category->delete();
+            return redirect()->route('news-categories.index')
+                ->with(['flash_message'=>
+                    'ลบประเภทข่าวสารเรียบร้อยแล้ว']);
+
+        }
+        else{
+            return redirect()->route('news-categories.index')
+                ->with('warning',
+                    'กรุณาเลือกประเภทข่าวสารอย่างน้อย 1 ประเภท');
+
+        }
+
     }
 }

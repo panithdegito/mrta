@@ -8,7 +8,7 @@ class Construct extends Model
 {
     protected $table = "constructs";
     protected $fillable = [
-        'status_id', 'publish_date','gallery_id'
+        'status_id', 'publish_date','folder_id'
     ];
 
     public function translate($local){
@@ -25,6 +25,6 @@ class Construct extends Model
     }
 
     public function status(){
-        return $this->hasOne('App\DefaultStatus', 'status_id');
+        return $this->belongsTo('App\DefaultStatus', 'status_id');
     }
 }

@@ -19,7 +19,7 @@ class CreateNewsCategoryTranslationsTable extends Migration
             $table->string('local',2);
             $table->string('name');
             $table->timestamps();
-            $table->foreign('news_category_id')->references('id')->on('news_category_translations');
+            $table->foreign('news_category_id')->references('id')->on('news_categories');
         });
     }
 

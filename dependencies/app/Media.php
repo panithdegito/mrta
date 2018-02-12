@@ -3,13 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 
-class Media extends Model implements HasMedia
+class Media extends Model
 {
-    use HasMediaTrait;
     protected $table = "media_collections";
+    protected $fillable = [
+        'name'
+    ];
+
 
 
 }

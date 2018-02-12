@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGalleryConstructsTable extends Migration
+class CreateMenusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateGalleryConstructsTable extends Migration
      */
     public function up()
     {
-        Schema::create('gallery_constructs', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('link');
+            $table->integer('ordering');
+            $table->integer('subordering');
+            $table->integer('childof');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateGalleryConstructsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gallery_constructs');
+        Schema::dropIfExists('menus');
     }
 }

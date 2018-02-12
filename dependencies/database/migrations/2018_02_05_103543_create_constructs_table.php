@@ -17,10 +17,10 @@ class CreateConstructsTable extends Migration
             $table->increments('id');
             $table->integer('status_id')->unsigned();
             $table->date('publish_date');
-            $table->integer('gallery_id')->unsigned();
+            $table->integer('folder_id')->unsigned();
             $table->timestamps();
             $table->foreign('status_id')->references('id')->on('default_statuses');
-            $table->foreign('gallery_id')->references('id')->on('gallery_constructs');
+            $table->foreign('folder_id')->references('id')->on('construct_folder_media');
         });
     }
 

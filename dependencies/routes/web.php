@@ -39,15 +39,17 @@ Route::prefix('MRTA-backend/console')->group(function (){
 
     //Pages
     Route::resource('pages', 'PagesController');
+    Route::post('pages/destroymany', 'PagesController@destroyMany')->name('pages_destroymany');
 
     //Menus
     Route::resource('menus', 'MenusController');
 
     //Media
+    Route::put('media/uploads', 'MediaController@upload')->name('media_upload');
     Route::resource('media', 'MediaController');
-    Route::put('media', 'MediaController@upload')->name('media_upload');
 
     //Construct
+    Route::get('construct/update/status/{id}', 'ConstructController@update_status')->name('construct_update_status');
     Route::prefix('construct')->group(function (){
 
         //Folder

@@ -25,7 +25,6 @@
             <ol class="breadcrumb breadcrumb-alt">
                 <li class="breadcrumb-item"><a href="{{route('dashboard')}}">หน้าแรก</a></li>
                 <li class="breadcrumb-item"><a href="javascript:;">ข่าวสาร</a></li>
-                <li class="breadcrumb-item active">ข่าวสารทั้งหมด</li>
             </ol>
         </div>
     </div>

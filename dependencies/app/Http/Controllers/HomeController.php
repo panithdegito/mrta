@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Construct;
 use Illuminate\Http\Request;
+use App\ConstructPercent;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $percent = ConstructPercent::first();
+        $constructs = Construct::where('status_id',2)->orderBy('id','desc')->get();
+        return view('dashboard',['percent'=>$percent,'constructs'=>$constructs]);
     }
 }

@@ -104,7 +104,8 @@
                                 <thead>
                                 <tr role="row">
                                     <th style="width: 1%" class="sorting_desc" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1" aria-label="No.: activate to sort column ascending" aria-sort="descending">ลำดับ</th>
-                                    <th style="width: 63%" class="sorting" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending">ชื่อ</th>
+                                    <th style="width: 43%" class="sorting" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending">ชื่อ</th>
+                                    <th style="width: 20%" class="sorting" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending">สถานะ</th>
                                     <th style="width: 20%" class="sorting" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending">สร้างเมื่อ</th>
                                     <th style="width: 15%" class="sorting" tabindex="0" aria-controls="basicTable" rowspan="1" colspan="1">จัดการ</th>
                                     <th style="width:1%" class="text-center sorting_disabled" rowspan="1" colspan="1" aria-label="">
@@ -122,7 +123,15 @@
                                                 {{ $construct->id }}
                                             </td>
                                             <td class="v-align-middle">
-                                                {{ $construct }}
+                                                {{ $construct->translateDefault()->title }}
+
+                                            </td>
+                                            <td class="v-align-middle">
+                                                {{ $construct->status->name }}
+
+                                            </td>
+                                            <td class="v-align-middle">
+                                                {{ $construct->created_at }}
 
                                             </td>
                                             <td class="v-align-middle">
@@ -143,7 +152,7 @@
                                 @endif
                                 </tbody>
                                 <tfoot>
-                                <tr><td></td><td></td><td></td><td style="text-align: right">เลือก:</td><td><button type="button" class="btn btn-xs btn-hotel btn-delete" data-target="#deleteMany" data-toggle="modal"><i class="icon-trash"></i> ลบ</button></td>
+                                <tr><td></td><td></td><td></td><td></td><td style="text-align: right">เลือก:</td><td><button type="button" class="btn btn-xs btn-hotel btn-delete" data-target="#deleteMany" data-toggle="modal"><i class="icon-trash"></i> ลบ</button></td>
                                     <div class="modal fade fill-in disable-scroll" id="deleteMany" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -194,7 +203,7 @@
                                     <input type="hidden" name="_method" value="delete" />
                                     {!! csrf_field() !!}
 
-                                    <h5>คุณต้องการลบความคืบหน้าโครงการ {{$construct}} ใช่หรือไม่ ?</h5>
+                                    <h5>คุณต้องการลบความคืบหน้าโครงการ {{$construct->translateDefault()->name}} ใช่หรือไม่ ?</h5>
                                     <button type="button" class="btn btn-hotel btn-primary-hotel" data-dismiss="modal" aria-hidden="true">ยกเลิก</button>&nbsp;
                                     <button class="btn btn-hotel btn-delete" type="submit">ลบ</button>
                                 </form>

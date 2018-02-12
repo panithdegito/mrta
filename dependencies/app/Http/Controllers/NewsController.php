@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\News;
 use App\NewsCategory;
 use Illuminate\Http\Request;
+use App\Language;
+use Validator;
+use App\Media;
+use App\DefaultStatus;
 
 class NewsController extends Controller
 {
@@ -27,7 +31,10 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        $language = Language::all();
+        $pictures = Media::orderBy('id','desc')->get();
+        $status = DefaultStatus::all();
+        return view('news.create')->with(['languages'=>$language, 'pictures'=>$pictures, 'status'=>$status]);
     }
 
     /**

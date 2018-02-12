@@ -8,7 +8,6 @@ class NewsCategory extends Model
 {
     protected $table = "news_categories";
     protected $fillable = [
-        'news_category_id', 'local', 'name'
     ];
 
     public function translate($local){
