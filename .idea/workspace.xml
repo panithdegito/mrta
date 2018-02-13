@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34464ad3-318d-4ac0-97bc-016abb6516de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/construct/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/menus/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/menus/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/news-categories/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/news-categories/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/news/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/pages/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/resources/views/pages/index.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_02_05_103000_create_gallery_constructs_table.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150820_create_news_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150922_create_news_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150855_create_news_translations_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150923_create_news_translations_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150940_create_news_categories_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150920_create_news_categories_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-assets/css/custom-admin.css" afterPath="$PROJECT_DIR$/admin-assets/css/custom-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Construct.php" afterPath="$PROJECT_DIR$/dependencies/app/Construct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/ConstructController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/MediaController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/MediaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/NewsCategoryController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/NewsCategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Http/Controllers/NewsController.php" afterPath="$PROJECT_DIR$/dependencies/app/Http/Controllers/NewsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/Media.php" afterPath="$PROJECT_DIR$/dependencies/app/Media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/NewsCategory.php" afterPath="$PROJECT_DIR$/dependencies/app/NewsCategory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/NewsCategoryTranslation.php" afterPath="$PROJECT_DIR$/dependencies/app/NewsCategoryTranslation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/app/NewsTranslation.php" afterPath="$PROJECT_DIR$/dependencies/app/NewsTranslation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/composer.json" afterPath="$PROJECT_DIR$/dependencies/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/config/medialibrary.php" afterPath="$PROJECT_DIR$/dependencies/config/medialibrary.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150921_create_news_category_translations_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_01_31_150921_create_news_category_translations_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_02_05_103543_create_constructs_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_02_05_103543_create_constructs_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/database/migrations/2018_02_09_160544_create_media_collections_table.php" afterPath="$PROJECT_DIR$/dependencies/database/migrations/2018_02_09_160544_create_media_collections_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/construct/create.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/construct/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/construct/index.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/construct/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/dashboard.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/news-categories/index.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/news-categories/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/resources/views/news/index.blade.php" afterPath="$PROJECT_DIR$/dependencies/resources/views/news/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/routes/web.php" afterPath="$PROJECT_DIR$/dependencies/routes/web.php" />
-    </list>
+    <list default="true" id="34464ad3-318d-4ac0-97bc-016abb6516de" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/dependencies/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="51" column="91" lean-forward="true" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="114" />
+              <caret line="51" column="91" lean-forward="false" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -162,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/MenusController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
-              <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -174,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/dependencies/resources/views/construct_picture/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-17">
-              <caret line="85" column="26" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="85" selection-end-column="26" />
+              <caret line="85" column="26" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="85" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -990,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/dependencies/app/Http/Controllers/MenusController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
-          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
@@ -1000,7 +964,7 @@
     <entry file="file://$PROJECT_DIR$/dependencies/resources/views/construct_picture/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
-          <caret line="85" column="26" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="85" selection-end-column="26" />
+          <caret line="85" column="26" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="85" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1018,7 +982,7 @@
     <entry file="file://$PROJECT_DIR$/dependencies/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="51" column="91" lean-forward="true" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="114" />
+          <caret line="51" column="91" lean-forward="false" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="114" />
           <folding />
         </state>
       </provider>
