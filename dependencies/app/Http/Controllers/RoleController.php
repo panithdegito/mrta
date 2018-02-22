@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Auth;
 //Importing laravel-permission models
+use Illuminate\Support\Facades\Redirect;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
@@ -50,12 +51,12 @@ class RoleController extends Controller {
         //Validate name and permissions field
         $validation = Validator::make( $request->all(), [
                 'name'=>'required|unique:roles',
-                'permissions[]' =>'required',
+                'permissions' =>'required',
             ],
         [
             'name.required' => 'จำเป็นต้องระบุชื่อ',
             'name.unique:roles' => 'ชื่อที่ระบุถูกใช้งานแล้ว',
-            'permissions[].required' => 'จำเป็นต้องกำหนดสิทธิ์การเข้าถึง'
+            'permissions.required' => 'จำเป็นต้องกำหนดสิทธิ์การเข้าถึง'
         ]
         );
         if ( $validation->fails() ) {
@@ -80,7 +81,7 @@ class RoleController extends Controller {
 
             return redirect()->route('roles.index')
                 ->with('flash_message',
-                    'Role'. $role->name.' added!');
+                    'เพิ่มสิทธิ์ '. $role->name.' เรียบร้อยแล้ว');
 
         }
 
@@ -152,9 +153,9 @@ class RoleController extends Controller {
                 $role->givePermissionTo($p);  //Assign permission to role
             }
 
-            return redirect('/admin/system/roles/'.$id.'/edit')
+            return redirect()->route('roles.edit',$id)
                 ->with('flash_message',
-                    'Role '. $role->name.' updated!');
+                    'แก้ไขสิทธิ์ '. $role->name.' เรียนร้อยแล้ว');
         }
     }
 
@@ -171,7 +172,28 @@ class RoleController extends Controller {
 
         return redirect()->route('roles.index')
             ->with('flash_message',
-                'Role deleted!');
+                'ลบสิทธิ์เรียบร้อยแล้ว');
+
+    }
+
+    public function destroyMany(Request $request)
+    {
+        if(sizeof($request->multi_id) >0){
+            for ($i = 0 ; $i < sizeof($request->multi_id) ; $i++){
+                $role = Role::findOrFail($request->multi_id[$i]);
+                $role->delete();
+            }
+
+            return redirect()->route('roles.index')
+                ->with('flash_message',
+                    'ลบสิทธิ์เรียบร้อยแล้ว');
+
+        }
+        else{
+            return redirect()->route('roles.index')
+                ->with('warning',
+                    'กรุณาเลือกสิทธิ์อย่างน้อย 1 สิทธิ์');
+        }
 
     }
 

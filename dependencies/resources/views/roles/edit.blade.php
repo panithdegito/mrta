@@ -40,7 +40,7 @@
     <div class="bg-orange">
         <div class="container">
             <ol class="breadcrumb breadcrumb-alt">
-                <li class="breadcrumb-item"><a href="/admin/dashboard">หน้าแรก</a></li>
+                <li class="breadcrumb-item"><a href="{{route('dashboard')}}">หน้าแรก</a></li>
                 <li class="breadcrumb-item"><a href="javascript:;">ตั้งค่า</a></li>
                 <li class="breadcrumb-item"><a href="{{route('roles.index')}}">สิทธิ์การเข้าถึง</a></li>
                 <li class="breadcrumb-item active">แก้ไข {{$role->name}}</li>

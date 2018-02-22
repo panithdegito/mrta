@@ -66,7 +66,7 @@ class LanguageController extends Controller
 
             return redirect()->route('languages.index')
                 ->with('flash_message',
-                    $language->name.' added.');
+                    'เพิ่ม '.$language->name);
 
 
         }
@@ -147,7 +147,7 @@ class LanguageController extends Controller
         }
         else{
             $language->delete();
-            return redirect()->route('permissions.index')
+            return redirect()->route('languages.index')
                 ->with('flash_message',
                     'Language deleted.');
         }

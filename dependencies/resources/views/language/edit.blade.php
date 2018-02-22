@@ -40,7 +40,7 @@
     <div class="bg-orange">
         <div class="container">
             <ol class="breadcrumb breadcrumb-alt">
-                <li class="breadcrumb-item"><a href="/admin/dashboard">หน้าแรก</a></li>
+                <li class="breadcrumb-item"><a href="{{route('dashboard')}}">หน้าแรก</a></li>
                 <li class="breadcrumb-item"><a href="javascript:;">ตั้งค่า</a></li>
                 <li class="breadcrumb-item"><a href="{{route('languages.index')}}">ภาษา</a></li>
                 <li class="breadcrumb-item active">แก้ไข {{$language->name}}</li>
@@ -97,7 +97,7 @@
                             <div class="form-group row{{ $errors->has('abbreviation') ? ' has-error' : '' }}">
                                 <label for="abbreviation" class="col-md-3 control-label">คำย่อ *</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control error" id="abbreviations" placeholder="th" name="abbreviation"  value="{{old('abbreviation',$language->abbreviation)}}" required="" aria-required="true" aria-invalid="true">
+                                    <input type="text" class="form-control error" id="abbreviations" placeholder="th" name="abbreviation"  value="{{old('abbreviation',$language->abbreviation)}}" required="" aria-required="true" aria-invalid="true" readonly>
                                 </div>
                             </div>
 
