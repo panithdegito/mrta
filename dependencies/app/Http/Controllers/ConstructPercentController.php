@@ -96,7 +96,7 @@ class ConstructPercentController extends Controller
 
 
 
-            return redirect()->route('construct.index')
+            return redirect()->route('stations.index')
                 ->with('flash_message',
                     'บันทึกข้อมูลเรียบร้อยแล้ว');
 
