@@ -50,6 +50,9 @@ Route::prefix('MRTA-backend/console')->group(function (){
 
     //Construct
     Route::get('construct/update/status/{id}', 'ConstructController@update_status')->name('construct_update_status');
+    Route::resource('stations', 'StationController');
+    //Stations
+    Route::post('stations/destroymany', 'StationController@destroyMany')->name('stations_destroymany');
     Route::prefix('construct')->group(function (){
 
         //Folder
