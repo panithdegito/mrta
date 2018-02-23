@@ -99,7 +99,7 @@
                         @can('ความคืบหน้าโครงการ')
                             <li class="p-r-10 inline menu-item">
                                 <div class="p-r-10 fs-14 font-heading hidden-md-down text-orange" style="text-align: center">
-                                    <a href="{{route('construct.index')}}" class="fs-14 font-heading hidden-md-down text-orange">
+                                    <a href="{{route('stations.index')}}" class="fs-14 font-heading hidden-md-down text-orange">
                                         <i class="icon-helmet" style="font-size: 30px"></i><br>
                                         โครงการ
                                     </a>
