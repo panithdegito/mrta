@@ -53,6 +53,25 @@ Route::prefix('MRTA-backend/console')->group(function (){
     Route::resource('stations', 'StationController');
     //Stations
     Route::post('stations/destroymany', 'StationController@destroyMany')->name('stations_destroymany');
+    Route::prefix('stations')->group(function (){
+
+        //Folder
+        Route::post('folder/{id}', 'StationFolderController@store')->name('add_folder');
+        Route::get('folder/{id}', 'StationFolderController@show')->name('show_folder');
+        Route::put('folder/{id}', 'StationFolderController@update')->name('update_folder');
+        Route::delete('folder/{id}', 'StationFolderController@destroy')->name('delete_folder');
+
+        //Uploads
+        Route::put('uploads/{id}', 'StationImageController@upload')->name('uploads_progress');
+
+        //Uploads
+        Route::delete('uploads/{id}', 'StaionImageController@destroy')->name('uploads_delete');
+
+        //Percent Update
+        Route::resource('percent', 'ConstructPercentController');
+
+    });
+
     Route::prefix('construct')->group(function (){
 
         //Folder

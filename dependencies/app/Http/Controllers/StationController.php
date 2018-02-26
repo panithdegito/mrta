@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Language;
 use App\Station;
+use App\StationFolder;
 use App\StationStatus;
 use App\StationTranslation;
 use Illuminate\Http\Request;
@@ -105,7 +106,9 @@ class StationController extends Controller
      */
     public function show($id)
     {
-        //
+        $station = Station::findOrFail($id);
+        $folder = StationFolder::orderBy('id','desc')->where('station_id', $id)->paginate(50);
+        return view('stations.show', ['folders'=>$folder, 'station'=>$station]);
     }
 
     /**

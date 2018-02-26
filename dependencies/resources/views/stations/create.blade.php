@@ -3,24 +3,6 @@
     <link href="{{asset('/admin-assets/assets/plugins/css/datepicker.css')}}" rel="stylesheet">
 @endsection
 @section('mini-menu')
-    <div class="bg-orange">
-        <div class="container">
-            <div class="menu-bar header-sm-height" data-pages-init='horizontal-menu' data-hide-extra-li="4">
-                <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-close" data-toggle="horizontal-menu">
-                </a>
-                <ul>
-                    <li class="active">
-                        <a href="{{route('stations.index')}}">ความคืบหน้าโครงการ</a>
-                    </li>
-
-                    <li>
-                        <a href="{{route('pictures.index')}}"><span class="title">คลังภาพโครงการ</span></a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
 @endsection
 @section('container')
     <div class="bg-orange">
